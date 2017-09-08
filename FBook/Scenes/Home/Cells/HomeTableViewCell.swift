@@ -26,6 +26,7 @@ extension HomeTableViewCell: HomeCellView {
     func displayConfigure(_ configurator: HomeCellConfigurator?) {
         self.configurator = configurator
         self.configurator?.configure(cell: self)
+        presenter?.loadCell()
     }
 
 }

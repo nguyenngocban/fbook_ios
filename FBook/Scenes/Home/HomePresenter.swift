@@ -43,6 +43,7 @@ class HomePresenterImplementation {
     fileprivate func handleLoadBookError(_ error: Error) {
         view?.showLoadBooksError(message: error.message)
     }
+
 }
 
 extension HomePresenterImplementation: HomePresenter {

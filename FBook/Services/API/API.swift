@@ -23,7 +23,7 @@ public enum API {
 
 extension API: TargetType {
 
-    static var debugMode = true
+    static var debugMode = false
     static let baseURLStringProd = "http://api-book.framgia.vn/api/v0"
     static let baseURLStringDebug = "http://private-anon-040374aa5d-apibookframgiavn.apiary-mock.com/api/v0"
 

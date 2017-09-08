@@ -28,6 +28,10 @@
 		77A76EFE1F629D49008601E2 /* HomeCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A76EFA1F629D49008601E2 /* HomeCellPresenter.swift */; };
 		77A76F071F62A5FC008601E2 /* HomeHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A76F051F62A5FC008601E2 /* HomeHeaderViewCell.swift */; };
 		77A76F081F62A5FC008601E2 /* HomeHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77A76F061F62A5FC008601E2 /* HomeHeaderViewCell.xib */; };
+		77A76F0D1F62B04F008601E2 /* BookCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77A76F0B1F62B04F008601E2 /* BookCollectionViewCell.xib */; };
+		77A76F0F1F62B0A0008601E2 /* BookCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A76F0E1F62B0A0008601E2 /* BookCellConfigurator.swift */; };
+		77A76F111F62B0B9008601E2 /* BookCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A76F101F62B0B9008601E2 /* BookCellPresenter.swift */; };
+		77A76F131F62B18C008601E2 /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A76F121F62B18C008601E2 /* BookCollectionViewCell.swift */; };
 		77DECCB81F623E31007E32F5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77DECCB51F623E31007E32F5 /* Login.storyboard */; };
 		77DECCB91F623E31007E32F5 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DECCB61F623E31007E32F5 /* LoginPresenter.swift */; };
 		77DECCBA1F623E31007E32F5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DECCB71F623E31007E32F5 /* LoginViewController.swift */; };
@@ -106,6 +110,10 @@
 		77A76EFA1F629D49008601E2 /* HomeCellPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCellPresenter.swift; sourceTree = "<group>"; };
 		77A76F051F62A5FC008601E2 /* HomeHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderViewCell.swift; sourceTree = "<group>"; };
 		77A76F061F62A5FC008601E2 /* HomeHeaderViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeaderViewCell.xib; sourceTree = "<group>"; };
+		77A76F0B1F62B04F008601E2 /* BookCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCollectionViewCell.xib; sourceTree = "<group>"; };
+		77A76F0E1F62B0A0008601E2 /* BookCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCellConfigurator.swift; sourceTree = "<group>"; };
+		77A76F101F62B0B9008601E2 /* BookCellPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCellPresenter.swift; sourceTree = "<group>"; };
+		77A76F121F62B18C008601E2 /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
 		77DECCB51F623E31007E32F5 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		77DECCB61F623E31007E32F5 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		77DECCB71F623E31007E32F5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -224,17 +232,29 @@
 			children = (
 				77A76EF51F629D32008601E2 /* HomeTableViewCell.swift */,
 				77A76EF61F629D32008601E2 /* HomeTableViewCell.xib */,
-				77A76F051F62A5FC008601E2 /* HomeHeaderViewCell.swift */,
-				77A76F061F62A5FC008601E2 /* HomeHeaderViewCell.xib */,
 				77A76EF91F629D49008601E2 /* HomeCellConfigurator.swift */,
 				77A76EFA1F629D49008601E2 /* HomeCellPresenter.swift */,
+				77A76F051F62A5FC008601E2 /* HomeHeaderViewCell.swift */,
+				77A76F061F62A5FC008601E2 /* HomeHeaderViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		77A76F091F62B025008601E2 /* BookCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				77A76F121F62B18C008601E2 /* BookCollectionViewCell.swift */,
+				77A76F0B1F62B04F008601E2 /* BookCollectionViewCell.xib */,
+				77A76F0E1F62B0A0008601E2 /* BookCellConfigurator.swift */,
+				77A76F101F62B0B9008601E2 /* BookCellPresenter.swift */,
+			);
+			path = BookCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		77DECCB31F623E31007E32F5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				77A76F091F62B025008601E2 /* BookCollectionViewCell */,
 				77A76EDF1F62956F008601E2 /* Home */,
 				77DECCB41F623E31007E32F5 /* Login */,
 				77DECCC21F624F9B007E32F5 /* ForgotPassword */,
@@ -544,6 +564,7 @@
 				77A76F081F62A5FC008601E2 /* HomeHeaderViewCell.xib in Resources */,
 				77F59FED1F5F9B1F0074A5DB /* Assets.xcassets in Resources */,
 				77DECCB81F623E31007E32F5 /* Login.storyboard in Resources */,
+				77A76F0D1F62B04F008601E2 /* BookCollectionViewCell.xib in Resources */,
 				77A76EF81F629D32008601E2 /* HomeTableViewCell.xib in Resources */,
 				77F59FEB1F5F9B1F0074A5DB /* Main.storyboard in Resources */,
 			);
@@ -780,6 +801,7 @@
 				22C480651F60445A00DB7A4C /* AuthenticationProvider.swift in Sources */,
 				224C0F2B1F604B86007BEA04 /* Office.swift in Sources */,
 				77F5A0311F5FE0630074A5DB /* BaseViewController.swift in Sources */,
+				77A76F131F62B18C008601E2 /* BookCollectionViewCell.swift in Sources */,
 				224C0F2D1F604C10007BEA04 /* OfficeProvider.swift in Sources */,
 				77F5A0261F5FDF340074A5DB /* NetworkReachability.swift in Sources */,
 				77F59FE61F5F9B1F0074A5DB /* AppDelegate.swift in Sources */,
@@ -787,6 +809,7 @@
 				77F4E26E1F60F73E00C68BA8 /* BookProvider.swift in Sources */,
 				77DECCBA1F623E31007E32F5 /* LoginViewController.swift in Sources */,
 				77F4E26A1F60F28E00C68BA8 /* SectionBook.swift in Sources */,
+				77A76F0F1F62B0A0008601E2 /* BookCellConfigurator.swift in Sources */,
 				77DECCC11F6247C7007E32F5 /* LoginViewRouter.swift in Sources */,
 				22C480631F6043F800DB7A4C /* BaseProvider.swift in Sources */,
 				77A76EEF1F629602008601E2 /* HomeViewRouter.swift in Sources */,
@@ -798,6 +821,7 @@
 				22E076A21F61BDD000869A05 /* String+Extensions.swift in Sources */,
 				77F5A0351F5FE0B90074A5DB /* BaseTabBarController.swift in Sources */,
 				77A76EF71F629D32008601E2 /* HomeTableViewCell.swift in Sources */,
+				77A76F111F62B0B9008601E2 /* BookCellPresenter.swift in Sources */,
 				22C480611F6040A400DB7A4C /* User.swift in Sources */,
 				22E076A61F61D15300869A05 /* Error+Extensions.swift in Sources */,
 				77F4E2641F60E7DB00C68BA8 /* Review.swift in Sources */,

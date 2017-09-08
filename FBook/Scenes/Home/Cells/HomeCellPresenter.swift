@@ -14,7 +14,7 @@ protocol HomeCellView: class {
 }
 
 protocol HomeCellPresenter {
-
+    func loadCell()
 }
 
 struct HomeCellPresenterImplementation {
@@ -30,5 +30,7 @@ struct HomeCellPresenterImplementation {
 }
 
 extension HomeCellPresenterImplementation: HomeCellPresenter {
-
+    func loadCell() {
+        view?.refreshBooks()
+    }
 }
